@@ -1,0 +1,255 @@
+.budget-input-card {
+  margin-bottom: var(--space-8);
+}
+
+.budget-input-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+
+.budget-input-header h3 {
+  font-size: 1.125rem;
+}
+
+.btn-sm {
+  padding: var(--space-2) var(--space-4);
+  font-size: 0.8125rem;
+}
+
+.budget-display-value {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--on-surface);
+}
+
+.budget-display-value .currency-symbol {
+  font-size: 0.5em;
+  opacity: 0.6;
+}
+
+.budget-edit-field {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.budget-edit-prefix {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--on-surface-variant);
+}
+
+.budget-edit-input {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  max-width: 250px;
+}
+
+/* Budget Overview Grid */
+.budget-overview {
+  margin-bottom: var(--space-8);
+}
+
+.gauge-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-6);
+}
+
+.gauge-container {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin-bottom: var(--space-4);
+}
+
+.gauge-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.gauge-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gauge-percentage {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.gauge-label {
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--on-surface-variant);
+}
+
+.gauge-status {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+}
+
+/* Stat Cards */
+.summary-stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-2);
+  padding: var(--space-6) var(--space-8);
+}
+
+.stat-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin-bottom: var(--space-2);
+}
+
+.stat-icon--red {
+  background: rgba(255, 179, 176, 0.12);
+  color: var(--tertiary-fixed-dim);
+}
+
+.stat-icon--blue {
+  background: rgba(0, 229, 255, 0.12);
+  color: var(--primary-container);
+}
+
+.stat-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--on-surface-variant);
+}
+
+.stat-value {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--on-surface);
+}
+
+.stat-sub {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin-top: var(--space-2);
+}
+
+.stat-remaining {
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+.stat-sub-icon {
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+}
+
+.stat-projected {
+  font-size: 0.8125rem;
+  color: var(--on-surface-variant);
+}
+
+/* Category Breakdown */
+.category-breakdown-card {
+  margin-bottom: var(--space-8);
+}
+
+.section-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: var(--space-6);
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.category-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.category-row-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-row-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.category-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.category-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--on-surface);
+}
+
+.category-row-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.category-amount {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--on-surface);
+}
+
+.category-percent {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--on-surface-variant);
+  min-width: 36px;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .budget-display-value {
+    font-size: 2rem;
+  }
+
+  .budget-edit-input {
+    font-size: 1.5rem;
+  }
+}

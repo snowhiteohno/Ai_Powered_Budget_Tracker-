@@ -1,0 +1,163 @@
+.analytics-stats {
+  margin-bottom: var(--space-8);
+}
+
+.analytics-stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-1);
+  padding: var(--space-5) var(--space-6);
+}
+
+.analytics-stat-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  margin-bottom: var(--space-2);
+}
+
+.analytics-stat-icon--red {
+  background: rgba(255, 179, 176, 0.12);
+  color: var(--tertiary-fixed-dim);
+}
+
+.analytics-stat-icon--green {
+  background: rgba(77, 224, 130, 0.12);
+  color: var(--secondary);
+}
+
+.analytics-stat-icon--blue {
+  background: rgba(0, 229, 255, 0.12);
+  color: var(--primary-container);
+}
+
+.analytics-stat-icon--purple {
+  background: rgba(206, 147, 216, 0.12);
+  color: #ce93d8;
+}
+
+.analytics-stat-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--on-surface-variant);
+}
+
+.analytics-stat-value {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--on-surface);
+}
+
+.analytics-stat-sub {
+  font-size: 0.75rem;
+  color: var(--on-surface-variant);
+}
+
+.analytics-charts {
+  margin-bottom: var(--space-8);
+}
+
+.analytics-trend {
+  margin-bottom: var(--space-8);
+}
+
+.analytics-bottom {
+  margin-bottom: var(--space-8);
+}
+
+/* Top Categories */
+.top-categories {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.top-category-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  background: var(--surface-container);
+  border-radius: var(--radius-lg);
+}
+
+.top-category-rank {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0, 229, 255, 0.12);
+  color: var(--primary-container);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+
+.top-category-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.top-category-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.top-category-amount {
+  font-size: 0.75rem;
+  color: var(--on-surface-variant);
+}
+
+.top-category-percentage {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* Currency Converter */
+.converter-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.converter-result {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-4) var(--space-5);
+  background: var(--surface-container);
+  border-radius: var(--radius-lg);
+}
+
+.converter-converted-value {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--secondary);
+}
+
+.converter-rate {
+  font-size: 0.75rem;
+  color: var(--on-surface-variant);
+}
+
+.converter-loading {
+  font-size: 0.875rem;
+  color: var(--outline);
+}

@@ -1,0 +1,19 @@
+.transactions-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.transactions-count {
+  font-size: 0.8125rem;
+  color: var(--on-surface-variant);
+  margin-bottom: var(--space-4);
+}
+
+.transactions-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding-bottom: var(--space-20);
+}
