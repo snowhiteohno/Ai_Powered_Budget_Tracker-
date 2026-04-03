@@ -1,0 +1,90 @@
+.budget-card {
+  padding: var(--space-6) var(--space-8);
+}
+
+.budget-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-5);
+}
+
+.budget-card-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.budget-status-badge {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  border: 1px solid;
+  background: transparent;
+}
+
+.budget-amounts {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+
+.budget-spent,
+.budget-of {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.budget-amount-label {
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--on-surface-variant);
+}
+
+.budget-amount-value {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.budget-progress {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.budget-progress .progress-track {
+  flex: 1;
+}
+
+.budget-percentage {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 700;
+  min-width: 40px;
+  text-align: right;
+}
+
+.budget-remaining {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--space-4);
+  border-top: 1px solid rgba(59, 73, 76, 0.15);
+}
+
+.budget-remaining-label {
+  font-size: 0.8125rem;
+  color: var(--on-surface-variant);
+}
+
+.budget-remaining-value {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+}
